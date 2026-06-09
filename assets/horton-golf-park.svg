@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title">
+  <title id="title">Horton Golf Park</title>
+  <rect width="220" height="220" fill="#fff"/>
+  <path d="M48 24h84c41 0 69 28 69 70 0 43-29 72-72 72H96v30H48z" fill="#354fa3"/>
+  <path d="M48 114h151c-8 33-35 52-72 52H96v30H48z" fill="#73b842"/>
+  <path d="M102 78 166 107 102 139z" fill="#ec0a83"/>
+  <path d="M88 63v119" stroke="#fff" stroke-width="12"/>
+  <circle cx="74" cy="176" r="10" fill="#fff"/>
+</svg>
