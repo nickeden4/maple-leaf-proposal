@@ -1,0 +1,8 @@
+{
+  "name": "maple-leaf-revops-proposal",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo Static proposal ready"
+  }
+}
