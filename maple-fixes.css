@@ -23,11 +23,24 @@
 .service-cost-highlight {
   margin: 0 4px 0 0;
   color: #0b1713;
-  background: #ff7a59;
+  background: #d9bf6b;
 }
 
 .stack-block.trc-block .service-cost-highlight {
   color: #0b1713;
+}
+
+.price-highlight.hubspot-price {
+  background: #ff7a59;
+}
+
+.price-highlight.pipedrive-price {
+  background: #00bd82;
+}
+
+.price-highlight.activecampaign-price {
+  color: #fff;
+  background: #3578e5;
 }
 
 .flywheel-copy {
