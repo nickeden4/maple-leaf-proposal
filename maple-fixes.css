@@ -33,3 +33,12 @@
 .flywheel-copy {
   padding-top: 0;
 }
+
+.flow-node span,
+.activity-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(180px, 100%);
+  white-space: nowrap;
+}
