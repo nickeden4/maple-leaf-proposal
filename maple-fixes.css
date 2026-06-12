@@ -1,0 +1,35 @@
+.crm-option.preferred .tag {
+  max-width: 100%;
+  margin-bottom: 22px;
+  white-space: normal;
+  line-height: 1.25;
+}
+
+.price-highlight,
+.service-cost-highlight {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #17130b;
+  background: #d9bf6b;
+  font-size: 15px;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.service-cost-highlight {
+  margin: 0 4px 0 0;
+  color: #0b1713;
+  background: #ff7a59;
+}
+
+.stack-block.trc-block .service-cost-highlight {
+  color: #0b1713;
+}
+
+.flywheel-copy {
+  padding-top: 0;
+}
