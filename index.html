@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="venue-images.css?v=gallery-eight-image-20260610" />
     <link rel="stylesheet" href="brand-fixes.css?v=operating-card-types-20260611" />
     <link rel="stylesheet" href="tech-stack.css?v=stack-costs-20260611" />
-    <link rel="stylesheet" href="maple-fixes.css?v=pricing-flywheel-20260612" />
+    <link rel="stylesheet" href="maple-fixes.css?v=interactive-pricing-20260629" />
   </head>
   <body>
     <header class="site-header" aria-label="Proposal header">
@@ -22,7 +22,7 @@
         <span><strong>The Revenue Club</strong><small>Maple Leaf proposal</small></span>
       </a>
       <nav class="top-nav" aria-label="Proposal sections">
-        <a href="#fit">Fit</a><a href="#operating-model">Operating model</a><a href="#crm">CRM</a><a href="#plan">Plan</a>
+        <a href="#fit">Fit</a><a href="#operating-model">Operating model</a><a href="#crm">CRM</a><a href="#pricing">Pricing</a><a href="#plan">Plan</a>
       </nav>
     </header>
 
@@ -129,6 +129,89 @@
         </div>
       </section>
 
+      <section class="section-band pricing" id="pricing">
+        <div class="pricing-heading">
+          <div class="section-heading"><p class="eyebrow">Pricing overview</p><h2>Two separate commercial layers: HubSpot software and The Revenue Club services.</h2></div>
+          <img class="pricing-logo" src="assets/the-revenue-club-black.png" alt="The Revenue Club" />
+        </div>
+        <div class="pricing-overview">
+          <article class="pricing-card hubspot-pricing-card">
+            <div class="pricing-card-head"><div><p class="eyebrow">HubSpot Software</p><h3>Platform licences, onboarding and access.</h3></div><img src="assets/hubspot-logo.png" alt="HubSpot" /></div>
+            <div class="pricing-metrics">
+              <div><span>Setup / onboarding</span><strong>&pound;2,600</strong></div>
+              <div><span>Monthly platform</span><strong>&pound;1,251</strong></div>
+            </div>
+            <p class="pricing-note">HubSpot's onboarding programme is designed to help customers get started with the platform rather than provide a fully managed implementation. Responsibility for adoption, process building, user training, data quality and system evolution typically sits with the club.</p>
+            <div class="package-list">
+              <h4>HubSpot package</h4>
+              <ul>
+                <li><strong>Marketing Hub Pro</strong><span>12k marketing contacts, automation, campaign reporting and customer journeys.</span></li>
+                <li><strong>Sales Hub Pro</strong><span>1 seat for advanced sales pipeline management, deal tracking and reporting.</span></li>
+                <li><strong>Starter Hubs</strong><span>Service, Content and Data foundations for customer service, communication and data quality.</span></li>
+                <li><strong>Core Seats</strong><span>7 users with CRM access, shared visibility, records, reporting and collaboration.</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="pricing-card trc-pricing-card">
+            <div class="pricing-card-head"><div><p class="eyebrow">The Revenue Club Services</p><h3>Hands-on implementation, reporting, marketing and revenue optimisation.</h3></div><img src="assets/the-revenue-club-black.png" alt="The Revenue Club" /></div>
+            <div class="pricing-metrics trc-setup">
+              <div><span>HubSpot implementation</span><strong>&pound;2,600</strong></div>
+              <div><span>TRC services setup</span><strong>&pound;600</strong></div>
+              <div><span>Total setup</span><strong>&pound;3,200</strong></div>
+              <div><span>Monthly retained service</span><strong data-trc-monthly-total>&pound;4,100</strong></div>
+            </div>
+            <p class="pricing-note">The Revenue Club provides a hands-on, fully managed implementation service built around golf clubs and hospitality businesses. We configure HubSpot, build workflows and processes, manage data, deliver training and support adoption so the platform becomes embedded in day-to-day operations.</p>
+            <div class="pricing-total-panel">
+              <span>Selected TRC retained package</span>
+              <strong data-trc-monthly-total>&pound;4,100</strong>
+              <small>per month, excluding HubSpot software fees</small>
+            </div>
+          </article>
+        </div>
+        <div class="service-builder" data-pricing-calculator>
+          <div class="builder-intro">
+            <div><p class="eyebrow">Interactive TRC service builder</p><h3>Add or remove retained services to shape the monthly package.</h3></div>
+            <div class="builder-summary" aria-live="polite">
+              <span>TRC retained service</span>
+              <strong data-trc-monthly-total>&pound;4,100</strong>
+              <small>HubSpot + selected TRC monthly: <b data-combined-monthly>&pound;5,351</b></small>
+            </div>
+          </div>
+          <div class="service-options">
+            <article class="service-option included-option" aria-label="Monthly reporting included">
+              <span class="service-tag">Included</span>
+              <h4>Monthly reporting</h4>
+              <p>CRM and sales team performance, revenue performance, marketing performance, monthly green fee reporting and access to Reports.Golf.</p>
+              <strong>Included</strong>
+            </article>
+            <label class="service-option is-selected">
+              <input type="checkbox" data-service-toggle value="1500" checked />
+              <span class="service-tag">Retained</span>
+              <h4>HubSpot management</h4>
+              <p>Data management, workflow builds and upkeep, onboarding, ongoing training, system developments, enhancements and first-line support.</p>
+              <strong>&pound;1,500/month</strong>
+            </label>
+            <label class="service-option is-selected">
+              <input type="checkbox" data-service-toggle value="1800" checked />
+              <span class="service-tag">Retained</span>
+              <h4>Marketing services</h4>
+              <p>Weekly social posts, weekly marketing email campaigns and paid advertising management and reporting across priority revenue streams.</p>
+              <strong>&pound;1,800/month</strong>
+            </label>
+            <label class="service-option is-selected">
+              <input type="checkbox" data-service-toggle value="800" checked />
+              <span class="service-tag">Retained</span>
+              <h4>Green fee services</h4>
+              <p>Seasonal pricing, competitor analysis, weekly price adjustments, monthly green fee reporting and Reports.Golf visibility.</p>
+              <strong>&pound;800/month</strong>
+            </label>
+          </div>
+          <div class="pricing-disclaimer">
+            <p>HubSpot fees are paid separately to HubSpot. TRC services are paid separately to The Revenue Club. Prices are indicative and should be confirmed against final requirements, selected service levels, platform discounts and any additional integration, reporting or data work uncovered during scoping.</p>
+          </div>
+        </div>
+      </section>
+
       <section class="section-band plan" id="plan">
         <div class="section-heading"><p class="eyebrow">First 90 days</p><h2>A practical route from audit to adoption.</h2></div>
         <div class="timeline">
@@ -144,5 +227,31 @@
         <aside class="next-step"><h3>Proposed next step</h3><p>Book a meeting with The Revenue Club so we can get together, work through all of the options in full detail and agree the right next steps for Maple Leaf.</p><a class="button primary" href="mailto:nick@therevenueclub.co.uk,chris@therevenueclub.co.uk?subject=Maple%20Leaf%20proposal%20meeting&body=Hi%20Nick%20and%20Chris%2C%0A%0APlease%20can%20we%20book%20a%20meeting%20to%20go%20through%20the%20Maple%20Leaf%20proposal%20options%20in%20full%20detail%20and%20agree%20next%20steps%3F">Book a meeting</a></aside>
       </section>
     </main>
+    <script>
+      (() => {
+        const calculator = document.querySelector("[data-pricing-calculator]");
+        if (!calculator) return;
+        const hubspotMonthly = 1251;
+        const totals = document.querySelectorAll("[data-trc-monthly-total]");
+        const combinedTotal = document.querySelector("[data-combined-monthly]");
+        const formatter = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
+        const updateTotals = () => {
+          let trcMonthly = 0;
+          calculator.querySelectorAll("[data-service-toggle]").forEach((toggle) => {
+            const card = toggle.closest(".service-option");
+            card.classList.toggle("is-selected", toggle.checked);
+            trcMonthly += toggle.checked ? Number(toggle.value) : 0;
+          });
+          totals.forEach((target) => {
+            target.textContent = formatter.format(trcMonthly);
+          });
+          if (combinedTotal) {
+            combinedTotal.textContent = formatter.format(hubspotMonthly + trcMonthly);
+          }
+        };
+        calculator.addEventListener("change", updateTotals);
+        updateTotals();
+      })();
+    </script>
   </body>
 </html>
