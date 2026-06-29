@@ -43,6 +43,78 @@
   background: #3578e5;
 }
 
+.proposed-crm-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.trc-logo-row {
+  justify-content: flex-start;
+}
+
+.trc-crm-logo {
+  width: min(260px, 72%);
+  height: auto;
+  max-height: 88px;
+  object-fit: contain;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+}
+
+.proposed-stack-grid {
+  grid-template-columns: 1fr !important;
+}
+
+.proposed-stack-card {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.proposed-stack-card h4 {
+  min-height: 0;
+  font-size: clamp(24px, 3vw, 34px);
+}
+
+.proposed-stack-flow {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 0;
+  gap: 12px;
+}
+
+.proposed-stack-flow .stack-block {
+  min-height: 164px;
+  padding: 18px;
+}
+
+.proposed-stack-flow .stack-block:not(:last-child):after {
+  top: 50%;
+  right: -13px;
+  bottom: auto;
+  width: 12px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.proposed-stack-flow .stack-block small {
+  max-width: 320px;
+  font-size: 13px;
+}
+
+.proposed-stack-card ul {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.proposed-stack-card li {
+  padding: 16px;
+  border: 1px solid rgba(21, 31, 27, .12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .58);
+}
+
 .operating {
   color: #102721;
   background: #e0dcd1;
@@ -587,6 +659,20 @@
 }
 
 @media (max-width: 1100px) {
+  .proposed-stack-flow,
+  .proposed-stack-card ul {
+    grid-template-columns: 1fr;
+  }
+
+  .proposed-stack-flow .stack-block:not(:last-child):after {
+    top: auto;
+    right: 50%;
+    bottom: -13px;
+    width: 1px;
+    height: 12px;
+    transform: none;
+  }
+
   .pricing-overview,
   .builder-intro {
     grid-template-columns: 1fr;
@@ -596,9 +682,22 @@
   .service-options {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .granular-service-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 700px) {
+  .proposed-crm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trc-crm-logo {
+    width: min(210px, 70%);
+    max-height: 72px;
+  }
+
   .pricing-heading {
     flex-direction: column;
   }
@@ -619,7 +718,8 @@
 
   .pricing-metrics,
   .trc-setup,
-  .service-options {
+  .service-options,
+  .granular-service-options {
     grid-template-columns: 1fr;
   }
 
