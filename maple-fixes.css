@@ -451,8 +451,7 @@
 }
 
 .pricing-metrics div,
-.pricing-total-panel,
-.builder-summary {
+.pricing-total-panel {
   padding: 18px;
   border: 1px solid rgba(21, 31, 27, .12);
   border-radius: 8px;
@@ -460,8 +459,7 @@
 }
 
 .pricing-metrics span,
-.pricing-total-panel span,
-.builder-summary span {
+.pricing-total-panel span {
   display: block;
   margin-bottom: 6px;
   color: #21493b;
@@ -471,8 +469,7 @@
 }
 
 .pricing-metrics strong,
-.pricing-total-panel strong,
-.builder-summary strong {
+.pricing-total-panel strong {
   display: block;
   color: #0b4a32;
   font-family: Georgia, "Times New Roman", serif;
@@ -481,7 +478,7 @@
 }
 
 .trc-setup {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .pricing-note,
@@ -520,7 +517,6 @@
 
 .package-list span,
 .service-option p,
-.builder-summary small,
 .pricing-total-panel small {
   color: #4d5e55;
   line-height: 1.45;
@@ -546,10 +542,7 @@
 }
 
 .builder-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
-  gap: 18px;
-  align-items: stretch;
+  display: block;
   margin-bottom: 18px;
 }
 
@@ -557,16 +550,6 @@
   max-width: 760px;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(26px, 3vw, 42px);
-}
-
-.builder-summary {
-  display: grid;
-  align-content: center;
-  background: rgba(217, 191, 107, .16);
-}
-
-.builder-summary small b {
-  color: #102721;
 }
 
 .service-options {
